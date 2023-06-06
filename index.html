@@ -7,6 +7,118 @@
     <title>Document</title>
 </head>
 <body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalAlignment = CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        val emailState = remember { mutableStateOf(TextFieldValue()) }
+        val passwordState = remember { mutableStateOf(TextFieldValue()) }
+
+        TextField(
+            value = emailState.value,
+            onValueChange = { emailState.value = it },
+            label = { Text("Email") },
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        TextField(
+            value = passwordState.value,
+            onValueChange = { passwordState.value = it },
+            label = { Text("Password") },
+            visualTransformation = PasswordVisualTransformation(),
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Button(
+            onClick = {
+                // Perform login logic here
+                val email = emailState.value.text
+                val password = passwordState.value.text
+                // Validate the input and perform login action
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 16.dp)
+        ) {
+            Text(text = "Log in")
+        }
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <p>My name is kiplangat 
         age 19
         DOB 3/1/2004
