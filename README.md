@@ -1,4 +1,36 @@
 
+
+
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    println("Enter your name:")
+    val name = scanner.nextLine()
+
+    println("Enter your age:")
+    val age = scanner.nextInt()
+
+    println("Name: $name")
+    println("Age: $age")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 package ezra.mit.ui.animations
 
 import androidx.compose.foundation.layout.Box
